@@ -1,0 +1,230 @@
+/* Reset CCS  */
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, variable, form, fieldset, blockquote {
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    font-weight: normal;
+   }
+   table { border-collapse: collapse; border-spacing: 0; }
+   td, th, caption { font-weight: normal; text-align: left; }
+   img, fieldset { border: 0; }
+   ol { padding-left: 1.4em; list-style: decimal; }
+   ul { padding-left: 1.4em; list-style:square; }
+   q:before, q:after { content:''; }
+
+   #menu {
+       background-color: rgb(0, 0, 0);
+       border-radius: 2px;
+      
+       margin:1% 0px 0px 0px;
+    
+   }
+
+   #menu ul li{
+    height: 90px;
+       display:inline-block;
+     
+   }
+
+    #menu ul :nth-child(2){
+        margin-left: 600px;
+    }
+   
+     #menu ul li:first-child img{
+      display: flex;
+      width: 120px;
+      height: 120px;
+   } 
+   #menu ul li a{
+     padding:35px 35px 10px ; 
+    text-decoration: none;
+    height: 80px; 
+    color:white;
+    text-align: left;
+    display: flex;
+    
+    
+    
+  
+ 
+
+    font:normal 1.2em georgia;
+   }
+   
+   #menu ul li a:hover{
+ 
+    background-color: rgb(240, 240, 240);
+    color:rgb(45, 68, 82);
+    
+   }
+    .slides{
+        width: 100%;
+        height: 100%;
+        overflow: hidden; 
+        padding: 0px;
+       
+   
+    }
+  
+    .slides ul{
+        display: flex;
+        padding: 0px;
+        padding-bottom: 10px;
+        animation: cambio 20s infinite alternate;    
+    }
+
+    .slides li{
+        padding: 0px;
+        
+        width: 100%;
+        list-style:none   
+        
+    }
+    
+    .slides img{
+        width: 1400px;
+        height:600px;
+        padding: 0px;
+    }
+
+    @keyframes cambio /* PARADAS o transiciones*/
+    {
+        /* del 0 % al 20 % o se mueve nada
+        del 25% al 45% se mueve el porcentaje se refiere al tiempo es decir a 
+        un porcentaje de tiempo */
+        0%{margin-left: 0;}
+        10%{margin-left: 0;}
+        
+        15%{margin-left: -105%;}
+        30%{margin-left: -105%;}
+
+        35%{margin-left: -210%;}
+        50%{margin-left: -210%;}
+
+        55%{margin-left: -313%;}
+        70%{margin-left: -313%;} 
+
+        75%{margin-left: -415%;}
+        100%{margin-left: -415%;} 
+
+      
+    }
+
+    .iptem
+    {
+      
+        border: solid 1px white;
+        display: flex; /* sirve para dar caracteristicas a un texto */
+        align-items: center;
+        justify-content: center;
+        
+        font-size: 1.8em;
+        color: white;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .iptem:hover{
+        background-color: rgb(31, 29, 26);
+        color: rgb(255, 255, 255);
+      
+    }
+
+    .container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* tambien esta autofit */
+        grid-auto-rows: minmax(200px,auto); /* modifica el alto de la grilla */
+        gap:20px; /* es como un padding interior */
+        padding:5px;
+        grid-auto-flow: dense;
+    }
+
+    .iptem:first-child {
+       /*  grid-column-start:1;
+        grid-column-end:3; SELECCIONAS EL INICIO Y EL FINAL*/ 
+        grid-column: 1 / 3; /* inicio/final */
+    }
+
+    .wide{
+        grid-column: span 3; /* span significa cuantas grillas le quieres asignar */
+    }
+
+    .tall{
+        grid-row: span 2;
+    }
+    
+    #prueba h2{
+        margin: 60px;
+        
+        width: 180px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+  
+        
+    }
+    h2{
+        padding: 20px;
+        text-align: center;
+        color: cornsilk;
+        font-size: 3em;
+    }
+    h3{
+        padding: 20px;
+        text-align: center;
+        color: cornsilk;
+        font-size: 3em;
+    }
+    #prueba h3{
+        margin: 40px;
+        
+        width: 680px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+ 
+        .abajo:hover {
+        border-color: rgb(255, 255, 255);
+        border-width: 7px ;
+        border-radius: 10px;
+        background-color: brown;
+    }
+    .fondo{
+        background-color: rgb(2, 18, 70);
+    }
+
+    .reso{
+        
+        color: rgb(255, 255, 255);
+        width: auto;
+        height: auto;
+        
+        background-image: linear-gradient(transparent, rgb(4, 17, 59));
+        
+    }
+
+    footer{
+        margin: 50px 0px 0px 0px;
+        padding: 25px;
+        width: auto;
+        height: 100px;
+        background-color: black;
+        color: white;
+    }
+    footer a{
+       text-decoration: none;
+       color: rgb(255, 250, 250);
+    }
+    h4{
+        padding: 20px;
+        text-align: center;
+        color: rgb(3, 45, 70);
+        font-size: 3em;
+    }
